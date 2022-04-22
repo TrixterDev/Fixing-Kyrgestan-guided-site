@@ -1,0 +1,3 @@
+User-agent: *
+Disllow: 
+sitemap: http://kyrgyzguidedtours.com/sitemap.xml
