@@ -7427,3 +7427,8 @@ i:before {
     padding-bottom: 10px;
 }
 
+@media screen and (max-width:62.75rem){
+  .none{
+    display: none;
+  }
+}
