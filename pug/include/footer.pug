@@ -1,0 +1,159 @@
+// / ФОРМА POPUP
+footer.footer
+  // -/ sticky tab start here
+  // click button  pop-up form   code start here
+  #modal1.modal.fade(tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true')
+    .modal-dialog.modal-md(role='document')
+      // Content
+      .modal-content
+        // Body
+        .modal-body.mb-0.p-0
+          h1.text-center  Call Me 
+          hr.section-break
+          p.text-center  Enter your name and phone number 
+          form(action='mailcon.php' method='POST')
+            .form-group
+              label(for='exampleInputEmail1') Email address
+              input#exampleInputEmail1.form-control(type='email' name='exampleInputEmail1' aria-describedby='emailHelp' placeholder='Enter email')
+            .form-group
+              label(for='exampleInputPassword1') Name
+              input#exampleInputName1.form-control(type='text' name='exampleInputName1' placeholder='John' required='')
+            .form-group
+              label(for='exampleInputPassword1') Phone
+              input#exampleInputPhone1.form-control(type='tel' name='exampleInputPhone1' placeholder='Phone' required='')
+            button.btn-blue-edit(type='submit') Send
+          button.btn.btn-outline-primary.btn-rounded.btn-md.ml-4(type='button' data-dismiss='modal' style='position: absolute;  right: -10px;  top: -10px;\
+          background: #000;  color: #fff; border-radius:50%;') X
+        // Footer
+      // /.Content
+  .bgdiv
+    .container
+      // click button pop-up code end here
+      .side-widget.open(data-toggle='modal' data-target='#modal1' style='z-index:-1;')
+        a.btn.btn-blue.productCheckout(style='background: #5460d1;\
+        color: #fff;\
+        border-radius: 4px;\
+        text-align: center;\
+        text-decoration: none;\
+        display: flex;\
+        font-size: 14px;\
+        position: fixed;\
+        right: 40px;\
+        bottom: 230px;\
+        writing-mode: vertical-rl;\
+        min-height: 80px;\
+        padding: 0px;\
+        width: 40px;\
+        align-items: center;\
+        justify-content: center;z-index:99999;') Call Me
+      // - sticky tab end here
+      .side-widget.open(style='z-index:-1;')
+        a(href='https://api.whatsapp.com/send?phone=+996 701 799983' target='_blank' style='background: none;    \
+        color: #fff;\
+        border-radius: 4px;\
+        text-align: center;\
+        text-decoration: none;\
+        display: inline-block;\
+        font-size: 14px;\
+        position: fixed;\
+        right:30px;\
+        bottom: 130px;\
+        writing-mode: vertical-rl;\
+        min-height: 80px;padding:10px;margin-right:-7px;z-index:99999; ')
+          img.footer-logo(src='img/icon.png' alt='whatsapp')
+      .container
+        .row
+          .col-sm-3
+            img.footer-logo(src='img/logo-black.png' alt='logo')
+            h4.footer-headline We are silk road &amp; kyrgyz guided tours team
+            p.footer-desc
+              | A collective of creative professional guides, tour managers and
+              | inspired locals working in a partnership with local hosts and people, developing and
+              | bringing more adventures in tourism industry of Kyrgyzstan. We are fast growing young
+              | company, who are passionate on creating more adventures, making a bet on the quality of
+              | services and safety in traveling along the great silk road, cultural exploration and
+              | exchange...
+            button.btn.btn-setting-footer(type='button' data-toggle='modal' data-target='.bd-example-modal-lg') book now
+          .col-sm-3.margin-top
+            h4.extra-link Extra link
+            .line
+            ul
+              li.fa.fa-angle-right
+                a.footer-link(href='index.html') Home
+              br
+              li.fa.fa-angle-right
+                a.footer-link(href='./pages/tours/tour.html') Tours
+              br
+              li.fa.fa-angle-right
+                a.footer-link(href='./pages/about/about-us.html') About
+              br
+              li.fa.fa-angle-right
+                a.footer-link(href='./pages/service/service.html') Transportations
+              br
+              li.fa.fa-angle-right
+                a.footer-link(href='./pages/gallery/gallery.html') Gallery
+              br
+              li.fa.fa-angle-right
+                a.footer-link(href='./pages/contact/contact-us.html')
+                  | Contact
+                  | us
+              br
+          .col-sm-3.margin-top
+            h4.extra-link Tours
+            .line
+            ul
+              li.fa.fa-angle-right
+                a.footer-link(href='./pages/tours/adventure/Adventure-tours.html') Adventure tours (Combined)
+              br
+              li.fa.fa-angle-right
+                a.footer-link(href='./pages/tours/CentralAsia/Central_Asia-tours.html') Central Asia Tours
+              br
+              li.fa.fa-angle-right
+                a.footer-link(href='./pages/tours/culture/Culture-tours.html') Culture Tour
+              br
+              li.fa.fa-angle-right
+                a.footer-link(href='./pages/tours/Expedition/Expedition-tours.html') Expedition
+              br
+              li.fa.fa-angle-right
+                a.footer-link(href='./pages/tours/Horse/Horse-tours.html') Horse riding tours
+              br
+              li.fa.fa-angle-right
+                a.footer-link(href='./pages/tours/Biking/Biking-tours.html') Mountain Biking
+              br
+          .col-sm-3.margin-top
+            h4.extra-link Contact
+            .line2
+            .ab_wd_list
+              .media
+                .media-left
+                  i.fa.fa-map-marker
+                .media-body
+                  h5.contact-text
+                    | Kyrgyz Guided Tours LLC
+                    | 66 Kalyk Akieva street,
+                    | BC &quot;Rahat Palace&quot; 3 floor, office 11 A
+                    | 720011 Bishkek, Kyrgyzstan
+              .media
+                .media-left
+                  i.fa.fa-whatsapp
+                .media-body
+                  h5.footer_number.middle-footer +996 701 799 983
+              .media
+                .media-left
+                  i.fa.fa-mobile
+                .media-body
+                  h5.footer_number.ml-footer
+                    a(href='tel:+996 701 799 983')
+                      | +996 701
+                      | 799 983
+      .footer_copyright_area
+        .container
+          .copyright
+            h5.footer-copyright
+              | Copyright kyrgiz guided tours team
+              script.
+                document.write(new Date().getFullYear());
+              | . All rights reserved.
+            h5.pull-right
+              | Created by: 
+              a.company(href='http://paradisestudio.kg/') paradisestudio
